@@ -1,0 +1,38 @@
+import Image from "next/image"
+import Link from "next/link"
+export default function Navbar(){
+    return(
+        <div>
+            <div className="w-[1440px] h-[48px] bg-[#000000] flex">
+        <div className="w-[859px] h-[24px] text-[#ffffff] text-[14px] flex mt-[12px] relative pl-[445px]  ">
+          <div className="w-[550px] h-[24px] flex">
+            <p className="w-[474px] leading-[24px] text-[14px] ">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </p>
+            <p className="font-semibold">ShopNow</p>
+          </div>
+          <div className="relative left-[231px] flex">
+            <p>English</p>
+            <Image className="bg-white mt-1 ml-1" src={"/Vector (34).png"} alt="" width={24} height={24} />
+          </div>
+        </div>
+      </div>
+
+      {/* white work */}
+      <div className="w-[1170px] h-[38px] mt-10 relative left-[135px] flex">
+        <div className="w-[674px] h-[24px] gap-[190px] flex ">
+          <p className="w-[118px] h-[24px] font-bold text-[24px] leading-[24px] flex">
+            Exclusive
+          </p>
+          <div className="w-[367px] h-[24px] gap-[48px] justify-between ">
+            <Link href="/">Home</Link>
+            <Link href="/">Contact</Link>
+            <Link href="/jdc-it-city">About</Link>
+            <Link href="/SignUp">Sign Up</Link>
+          </div>
+        </div>
+      </div>
+        </div>
+    )
+}

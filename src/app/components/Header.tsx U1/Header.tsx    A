@@ -1,0 +1,28 @@
+import Image from "next/image";
+import Link from "next/link";
+export default function Header() {
+  return (
+    <div>
+      <div className="w-[1440px] h-[48px] bg-[#000000] flex">
+        <div className="w-[859px] h-[24px] text-[#ffffff] text-[14px] flex mt-[12px] relative pl-[445px]  ">
+          <div className="w-[550px] h-[24px] flex">
+            <p className="w-[474px] leading-[24px] text-[14px] ">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </p>
+            <p className="font-semibold">ShopNow</p>
+          </div>
+          <div className="relative left-[231px] flex">
+            <p>English</p>
+            <Image src={"/DropDown.png"} alt="" width={24} height={24} />
+          </div>
+        </div>
+      </div>
+
+      {/* white work */}
+      <div className="w-[1170px] h-[38px] mt-10 relative left-[135px] flex">
+        <div className="w-[674px] h-[24px] gap-[190px] flex ">
+          <p className="w-[118px] h-[24px] font-bold text-[24px] leading-[24px] flex">
+            Exclusive
+          </p>
+
